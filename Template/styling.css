@@ -1,0 +1,236 @@
+body {
+  background-color:#d9d9d9;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+
+/* Existing styles for the top div */
+#top-div {
+  background: linear-gradient(to bottom, #012146, #033536);
+  background-color: rgb(8, 49, 59);
+  opacity: 0.8;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: Arial;
+  /* Vertically center content */
+  justify-content: center;
+}
+
+#hello-text {
+  font-size: 50px;
+  color: rgb(256, 256, 256);
+  font-weight: bold;
+}
+
+/* Style for the SMOG icon div */
+#smog-icon {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  height: 100%;
+}
+
+/* Style for the SMOG Icon image */
+#smog-icon img {
+  height: 100%;
+  width: auto;
+}
+
+#ndma-logo {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 100%;
+}
+
+/* Style for the SMOG Icon image */
+#ndma-logo img {
+  height: 100%;
+  width: auto;
+}
+/*___________________________________________________________________________________________________________________________________________________________________________________*/
+#map {
+  opacity: 0.9;
+  height:700px;
+  width: 800px;
+  border: 1px;
+  border-radius: 25px;
+  border-style: solid;
+  position: absolute;
+  top: 115px;
+  left:15px;
+  border-width: 5px;
+  border-color: #3d4e35;
+  margin: 1% auto;
+}
+
+#pm2_video{
+  position: absolute;
+  top: 210px;
+  right:150px;
+}
+
+#pie_chart{
+  position: absolute;
+  top: 610px;
+  left:200px;
+}
+/*___________________________________________________________________________________________________________________________________________________________________________________*/
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink-animation 1s step-start infinite;
+}
+
+@keyframes blink-animation {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+/* ________________________________________________________________________________________________________________________________________________________________________________________________________________ */
+#p1{
+  background-color: rgba(214, 11, 11, 0.555);
+  top:120px;
+  padding: 20px;
+  position: absolute;
+  left: 660px;
+  color: rgb(255, 255, 255);
+  z-index: 10000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#p2{
+  top:530px;
+  font-size: 28px; 
+  position: absolute;
+  left: 1450px;
+  color: rgb(0, 0, 0);
+  z-index: 10000;
+  font-weight: bold;
+
+}
+
+#p3{
+  background-color: white;
+  top:950px;
+  font-size: 28px; 
+  position: absolute;
+  left: 1399px;
+  color: rgb(255, 255, 255);
+  z-index: 12000;
+  font-weight: bold;
+
+}
+
+#no2-map{
+  position: absolute;
+  top: 160px;
+  right: -20px;
+  z-index: 3000;  
+}
+
+#co-map{
+  position: absolute;
+  top: 160px;
+  right: 320px;
+  z-index: 1500;  
+
+}
+
+#so2-map{
+  position: absolute;
+  top: 160px;
+  right: 670px;
+}
+
+#no2-heading{
+  position: absolute;
+  top: 190px;
+  right:90px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  background-color: #093a36;
+  font-weight: bold;
+  z-index: 13000;
+}
+
+
+#co-heading{
+  position: absolute;
+  top: 190px;
+  right:430px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  background-color: #093a36;
+  font-weight: bold;
+  z-index: 13000;
+}
+
+#so2-heading{
+  position: absolute;
+  top: 190px;
+  right:790px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  background-color: #093a36;
+  font-weight: bold;
+  z-index: 13000;
+}
+/* __________________________________________________________________________________________________________________________________________________________________________________________________ */
+#running-text {
+  position: absolute;
+  left:0%;
+  bottom: 0%;
+  width: 100%;
+  font-family: 'Arial';
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #093a36; 
+  padding: 5px; 
+  color: #ffffff; /* White text color */
+  font-size: 26px; /* Font size for the entire marquee */
+  box-shadow: -40px 50px 55px rgba(0, 0, 0, 5);
+}
+
+#running-text marquee {
+  behavior: scroll;
+  direction: left;
+  animation: scrollText 1s linear infinite;
+  font-size: 30px; 
+}
+
+#running-text marquee span {
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: 0%; 
+}
+
+#running-text marquee span.tons-value {
+  font-size: 26px; /* Font size for the TONs values */
+  color: whitesmoke; /* Red color for the TONs values */
+}
+
+
+
+
+.bold-slide{
+  background-color: rgb(255, 0, 0);
+  color: white;
+  padding: 15px ;
+  border-radius: 5px;}

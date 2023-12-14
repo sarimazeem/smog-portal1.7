@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_top" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SMOG Portal | Pakistan</title>
+
+    <link rel="stylesheet" type="text/css" href="Template/styling.css">
+        <!-- Updated tile layer URL for imagery -->
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""
+      />
+      <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""
+      ></script>
+      <script src="http://leaflet.github.io/Leaflet.markercluster/example/realworld.10000.js"></script>
+
+
+
+</head>
+<body>
+    <script src="http://leaflet.github.io/Leaflet.markercluster/example/realworld.10000.js"></script>
+
+    <!-- Horizontal div on the top -->
+    <div id="top-div">
+        <div id="hello-text">
+             &nbsp NATIONAL SMOG MONITORING PLATFORM
+        </div>
+        <!-- Div for the SMOG Icon image -->
+        <div id="smog-icon">
+            <img src="Datasets/SMOG_Icon.png" alt="SMOG Icon">
+        </div>
+        <div id="ndma-logo">
+            <img src="Datasets/ndma_logo.jpg" alt="NDMA Icon">
+        </div>
+    </div>
+    
+    <div id="map"></div>
+
+    <div id='pm2_video'>
+        <video width="800" height="1200"  autoplay loop muted>
+        <source src="Datasets/pm2.5.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+    </div>
+
+    <div id='pie_chart'>
+        <video width="400" height="700"  autoplay loop muted>
+            <source src="Datasets/pie_chart.mp4" type="video/mp4">Your browser does not support the video tag.
+        </video>
+    </div> 
+    
+    <div id='bg-video'>
+        <video width="1200" height="700"  autoplay loop muted>
+            <source src="Datasets/smog.mp4" type="video/mp4">Your browser does not support the video tag.
+        </video>
+    </div> 
+
+    <p id="p1"></p>
+
+     <div id="no2-map">
+        <iframe src="Maps/NO2_Map.html"  height="400" width="370"></iframe>
+    </div>
+
+    <div id="co-map">
+        <iframe src="Maps/CO_Map.html" height="400" width="370"></iframe>
+    </div> 
+
+    <div id="so2-map">
+        <iframe src="Maps/SO2_Map.html" height="400" width="370"></iframe>
+    </div> 
+   
+    <div id="no2-heading">
+        NITROGEN-DIOXIDE</div>
+
+    <div id="so2-heading">
+        SULPHUR-DIOXIDE
+    </div>
+
+
+     <div id="co-heading">
+       CARBON-MONOXIDE
+    </div>
+
+
+    <div id="running-text" style="display: flex;">
+
+                <marquee behavior="scroll" direction="left">
+                    <span class="bold-slide">Lahore District:-</span>
+                    <span>&nbspFerozepur Road - </span>
+                    <span>Mall Road - </span>
+                    <span>Jail Road - </span>
+                    <span>Kot Lakhpat: 53,651 - </span>
+                    <span>Shahdara: 51,250 - </span>
+                    <span>Mazang: 51,573 - </span>
+                    <span>Johar Town: 60,484&nbsp </span>
+                    <span class="bold-slide">Faisalabad District:-</span>
+                    <span>&nbspClock Tower: 47,217 - </span>
+                    <span>Nishatabad: 43,548 - </span>
+                    <span>Wapda City: 13,270 - </span>
+                    <span>Madina Town: - </span>
+                    <span>Samanabad: - </span>  
+                    <span>Liaqatabad:&nbsp- </span>
+                    <span class="bold-slide">Peshawar District:-</span>
+                    <span>&nbspHayatabad: 14,909 - </span>
+                    <span>University Town: 12,493 - </span>
+                    <span>Namak Mandi: 13,850 - </span>
+                    <span>Zulfiqar Town: 13,249&nbsp</span>
+                    <span class="bold-slide">Multan District:-</span>
+                    <span>&nbspOld Multan - </span>
+                    <span>Ghareebabad - </span>
+                    <span>Shalimar Colony - </span>
+                    <span>Saddar -&nbsp </span>
+                    <span class="bold-slide">Gujranwala District:-</span>
+                    <span>&nbspOld Town - </span>
+                    <span>People's Colony - </span>
+                    <span>Saddar - </span>
+                    <span>Alarm Clock -</span>
+                </marquee>
+            </div>
+        </div>
+  
+</div>
+</div>
+<script src="Geojsons/multan.js"></script>
+<script src="Geojsons/faisalabad.js"></script>
+<script src="Geojsons/gujranwala.js"></script>
+<script src="Geojsons/peshawar.js"></script>
+<script src="Geojsons/lahore.js"></script>
+<script src="Geojsons/karachi.js"></script>
+<script src="Geojsons/provincial.geojson"></script>
+<script src="Geojsons/smog_score.js"></script>
+<script src="Template/heatmap.js"></script>
+<script src="leaflet-heatmap.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
